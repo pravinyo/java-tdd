@@ -30,7 +30,7 @@ public class AirportTest {
             assertEquals(0, economyFlight.getPassengersSet().size());
         }
 
-        @DisplayName("Then you can't add him more than once to flight")
+        @DisplayName("Then you can't add usual passenger more than once to flight")
         @RepeatedTest(5)
         public void testEconomyFlightUsualPassengerAddOnlyOnce(RepetitionInfo repetitionInfo) {
             Passenger mike = new Passenger("Mike", false);
@@ -54,6 +54,19 @@ public class AirportTest {
 
             assertFalse(economyFlight.removePassenger(john));
             assertEquals(1, economyFlight.getPassengersSet().size());
+        }
+
+        @DisplayName("Then you can't add VIP passenger more than once to flight")
+        @RepeatedTest(5)
+        public void testEconomyFlightVipPassengerAddOnlyOnce(RepetitionInfo repetitionInfo) {
+            Passenger john = new Passenger("John", true);
+
+            for (int i = 0; i < repetitionInfo.getCurrentRepetition(); i++) {
+                economyFlight.addPassenger(john);
+            }
+
+            assertEquals(1, economyFlight.getPassengersSet().size());
+            assertTrue(economyFlight.getPassengersSet().contains(john));
         }
     }
 
