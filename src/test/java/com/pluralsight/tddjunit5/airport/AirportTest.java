@@ -2,7 +2,7 @@ package com.pluralsight.tddjunit5.airport;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class AirportTest {
 
@@ -12,11 +12,11 @@ public class AirportTest {
         Passenger mike = new Passenger("Mike", false);
 
         assertEquals("1", economyFlight.getId());
-        assertEquals(true, economyFlight.addPassenger(mike));
+        assertTrue(economyFlight.addPassenger(mike));
         assertEquals(1, economyFlight.getPassengersList().size());
         assertEquals("Mike", economyFlight.getPassengersList().get(0).getName());
 
-        assertEquals(true, economyFlight.removePassenger(mike));
+        assertTrue(economyFlight.removePassenger(mike));
         assertEquals(0, economyFlight.getPassengersList().size());
     }
 
@@ -26,11 +26,11 @@ public class AirportTest {
         Passenger john = new Passenger("John", true);
 
         assertEquals("1", economyFlight.getId());
-        assertEquals(true, economyFlight.addPassenger(john));
+        assertTrue(economyFlight.addPassenger(john));
         assertEquals(1, economyFlight.getPassengersList().size());
         assertEquals("John", economyFlight.getPassengersList().get(0).getName());
 
-        assertEquals(false, economyFlight.removePassenger(john));
+        assertFalse(economyFlight.removePassenger(john));
         assertEquals(1, economyFlight.getPassengersList().size());
     }
 
@@ -40,9 +40,9 @@ public class AirportTest {
 
         Passenger mike = new Passenger("Mike", false);
 
-        assertEquals(false, businessFlight.addPassenger(mike));
+        assertFalse(businessFlight.addPassenger(mike));
         assertEquals(0, businessFlight.getPassengersList().size());
-        assertEquals(false, businessFlight.removePassenger(mike));
+        assertFalse(businessFlight.removePassenger(mike));
         assertEquals(0, businessFlight.getPassengersList().size());
 
     }
@@ -53,9 +53,9 @@ public class AirportTest {
 
         Passenger john = new Passenger("John", true);
 
-        assertEquals(true, businessFlight.addPassenger(john));
+        assertTrue(businessFlight.addPassenger(john));
         assertEquals(1, businessFlight.getPassengersList().size());
-        assertEquals(false, businessFlight.removePassenger(john));
+        assertFalse(businessFlight.removePassenger(john));
         assertEquals(1, businessFlight.getPassengersList().size());
 
     }
