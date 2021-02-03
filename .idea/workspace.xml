@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="259b07a2-9cc7-493a-8301-1d1ecea0e75e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="259b07a2-9cc7-493a-8301-1d1ecea0e75e" name="Default" comment="refactored to use new method">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/tddjunit5/milage/Mileage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/flight_information.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/pluralsight/tddjunit5/milage/FlightArgumentConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/pluralsight/tddjunit5/milage/MileageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pluralsight/tddjunit5/airport/AirportTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pluralsight/tddjunit5/airport/AirportTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDDJUNIT5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TDDJUNIT5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/tddjunit5/airport/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/tddjunit5/airport/Flight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/tddjunit5/airport/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/tddjunit5/airport/Passenger.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +24,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -131,6 +138,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
@@ -142,13 +151,22 @@
       <recent name="C:\CT\Pluralsight\TDD with JUnit 5\Module 1 - code\Before\airport\src\main\java\com\pluralsight\tddjunit5\airport" />
       <recent name="C:\CT\Pluralsight\TDD with JUnit 5\airport\src\main\java\com\pluralsight\tddjunit5\airport" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tripa\Downloads\tdd-junit5\airport\src\main\resources" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.pluralsight.tddjunit5.milage" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AirportTest">
+  <component name="RunManager" selected="JUnit.MileageTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -170,6 +188,56 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AirportTest$EconomyFlightTest.testEconomyFlightUsualPassengerAddOnlyOnce" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDDJUNIT5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pluralsight.tddjunit5.airport.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pluralsight.tddjunit5.airport.AirportTest" />
+      <option name="MAIN_CLASS_NAME" value="com.pluralsight.tddjunit5.airport.AirportTest$EconomyFlightTest" />
+      <option name="METHOD_NAME" value="testEconomyFlightUsualPassengerAddOnlyOnce(org.junit.jupiter.api.RepetitionInfo)" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AirportTest$EconomyFlightTest.testEconomyFlightVipPassengerAddOnlyOnce" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDDJUNIT5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pluralsight.tddjunit5.airport.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pluralsight.tddjunit5.airport.AirportTest" />
+      <option name="MAIN_CLASS_NAME" value="com.pluralsight.tddjunit5.airport.AirportTest$EconomyFlightTest" />
+      <option name="METHOD_NAME" value="testEconomyFlightVipPassengerAddOnlyOnce(org.junit.jupiter.api.RepetitionInfo)" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AirportTest$PremiumFlightTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDDJUNIT5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pluralsight.tddjunit5.airport.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pluralsight.tddjunit5.airport.AirportTest" />
+      <option name="MAIN_CLASS_NAME" value="com.pluralsight.tddjunit5.airport.AirportTest$PremiumFlightTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AirportTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDDJUNIT5" />
       <extension name="coverage">
@@ -186,18 +254,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AirportTest.testAirport" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MileageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDDJUNIT5" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pluralsight.tddjunit5.airport.*" />
+          <option name="PATTERN" value="com.pluralsight.tddjunit5.milage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.pluralsight.tddjunit5.airport" />
-      <option name="MAIN_CLASS_NAME" value="com.pluralsight.tddjunit5.airport.AirportTest" />
-      <option name="METHOD_NAME" value="testAirport" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.pluralsight.tddjunit5.milage" />
+      <option name="MAIN_CLASS_NAME" value="com.pluralsight.tddjunit5.milage.MileageTest" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -230,13 +297,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
-      <item itemvalue="JUnit.AirportTest.testAirport" />
       <item itemvalue="JUnit.AirportTest" />
+      <item itemvalue="JUnit.AirportTest$PremiumFlightTest" />
+      <item itemvalue="JUnit.AirportTest$EconomyFlightTest.testEconomyFlightUsualPassengerAddOnlyOnce" />
+      <item itemvalue="JUnit.AirportTest$EconomyFlightTest.testEconomyFlightVipPassengerAddOnlyOnce" />
+      <item itemvalue="JUnit.MileageTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MileageTest" />
+        <item itemvalue="JUnit.AirportTest$EconomyFlightTest.testEconomyFlightVipPassengerAddOnlyOnce" />
+        <item itemvalue="JUnit.AirportTest$EconomyFlightTest.testEconomyFlightUsualPassengerAddOnlyOnce" />
         <item itemvalue="JUnit.AirportTest" />
-        <item itemvalue="JUnit.AirportTest.testAirport" />
+        <item itemvalue="JUnit.AirportTest$PremiumFlightTest" />
       </list>
     </recent_temporary>
   </component>
@@ -252,6 +325,56 @@
       <option name="presentableId" value="Default" />
       <updated>1521997822863</updated>
     </task>
+    <task id="LOCAL-00001" summary="updated">
+      <created>1612282797702</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1612282797702</updated>
+    </task>
+    <task id="LOCAL-00002" summary="refactored to use new method">
+      <created>1612282832092</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1612282832092</updated>
+    </task>
+    <task id="LOCAL-00003" summary="group test according to similarity">
+      <created>1612283304377</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1612283304377</updated>
+    </task>
+    <task id="LOCAL-00004" summary="test for PremiumFlight added">
+      <created>1612285808584</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1612285808584</updated>
+    </task>
+    <task id="LOCAL-00005" summary="PremiumFlight added">
+      <created>1612285824005</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1612285824005</updated>
+    </task>
+    <task id="LOCAL-00006" summary="refactored to allow passenger added once">
+      <created>1612287768487</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1612287768487</updated>
+    </task>
+    <task id="LOCAL-00007" summary="refactored to allow vip passenger added once">
+      <created>1612288019289</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1612288019289</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -316,6 +439,16 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updated" />
+    <MESSAGE value="refactored to use new method" />
+    <MESSAGE value="group test according to similarity" />
+    <MESSAGE value="test for PremiumFlight added" />
+    <MESSAGE value="PremiumFlight added" />
+    <MESSAGE value="refactored to allow passenger added once" />
+    <MESSAGE value="refactored to allow vip passenger added once" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored to allow vip passenger added once" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pluralsight/tddjunit5/airport/Passenger.java">

@@ -5,6 +5,7 @@ import java.util.*;
 public abstract class Flight {
 
 	private final String id;
+	private int distance;
 	Set<Passenger> passengersList = new HashSet<>();
 
 	public Flight(String id) {
@@ -23,4 +24,11 @@ public abstract class Flight {
 
 	public abstract boolean removePassenger(Passenger passenger);
 
+	public int getDistance() {
+		return distance;
+	}
+
+	public void setDistance(int distance) {
+		this.distance = distance;
+	}
 }

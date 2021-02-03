@@ -1,5 +1,7 @@
 package com.pluralsight.tddjunit5.airport;
 
+import java.util.Objects;
+
 public class Passenger {
 
 	private String name;
@@ -18,4 +20,17 @@ public class Passenger {
 		return vip;
 	}
 
+	@Override
+	public int hashCode() {
+		return Objects.hash(name);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) return true;
+		if (obj == null || getClass() != obj.getClass()) return false;
+
+		Passenger passenger = (Passenger) obj;
+		return Objects.equals(name, passenger.name);
+	}
 }
