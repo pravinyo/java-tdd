@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="259b07a2-9cc7-493a-8301-1d1ecea0e75e" name="Default" comment="mileage feature and test added">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/tddjunit5/airconditioning/Sensor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/tddjunit5/airconditioning/Thermometer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/pluralsight/tddjunit5/MockitoExtension.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/pluralsight/tddjunit5/airconditioning/ThermometerTest.java" afterDir="false" />
+    <list default="true" id="259b07a2-9cc7-493a-8301-1d1ecea0e75e" name="Default" comment="thermometer added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/tddjunit5/airconditioning/AirConditioningSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/pluralsight/tddjunit5/airconditioning/AirConditioningSystemTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDDJUNIT5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TDDJUNIT5.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +160,7 @@
       <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ThermometerTest">
+  <component name="RunManager" selected="JUnit.AirConditioningSystemTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -190,18 +182,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AirportTest$EconomyFlightTest.testEconomyFlightUsualPassengerAddOnlyOnce" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AirConditioningSystemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDDJUNIT5" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pluralsight.tddjunit5.airport.*" />
+          <option name="PATTERN" value="com.pluralsight.tddjunit5.airconditioning.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.pluralsight.tddjunit5.airport.AirportTest" />
-      <option name="MAIN_CLASS_NAME" value="com.pluralsight.tddjunit5.airport.AirportTest$EconomyFlightTest" />
-      <option name="METHOD_NAME" value="testEconomyFlightUsualPassengerAddOnlyOnce(org.junit.jupiter.api.RepetitionInfo)" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.pluralsight.tddjunit5.airconditioning" />
+      <option name="MAIN_CLASS_NAME" value="com.pluralsight.tddjunit5.airconditioning.AirConditioningSystemTest" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -300,19 +291,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
-      <item itemvalue="JUnit.AirportTest$EconomyFlightTest.testEconomyFlightUsualPassengerAddOnlyOnce" />
       <item itemvalue="JUnit.AirportTest$EconomyFlightTest.testEconomyFlightVipPassengerAddOnlyOnce" />
       <item itemvalue="JUnit.MileageTest" />
       <item itemvalue="JUnit.ThermometerTest" />
       <item itemvalue="JUnit.ThermometerTest.testBlockedSensor" />
+      <item itemvalue="JUnit.AirConditioningSystemTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AirConditioningSystemTest" />
         <item itemvalue="JUnit.ThermometerTest" />
         <item itemvalue="JUnit.ThermometerTest.testBlockedSensor" />
         <item itemvalue="JUnit.MileageTest" />
         <item itemvalue="JUnit.AirportTest$EconomyFlightTest.testEconomyFlightVipPassengerAddOnlyOnce" />
-        <item itemvalue="JUnit.AirportTest$EconomyFlightTest.testEconomyFlightUsualPassengerAddOnlyOnce" />
       </list>
     </recent_temporary>
   </component>
@@ -384,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612330394500</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="thermometer added">
+      <created>1612362181806</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1612362181806</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -459,7 +457,8 @@
     <MESSAGE value="refactored to allow passenger added once" />
     <MESSAGE value="refactored to allow vip passenger added once" />
     <MESSAGE value="mileage feature and test added" />
-    <option name="LAST_COMMIT_MESSAGE" value="mileage feature and test added" />
+    <MESSAGE value="thermometer added" />
+    <option name="LAST_COMMIT_MESSAGE" value="thermometer added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pluralsight/tddjunit5/airport/Passenger.java">
